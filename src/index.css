@@ -69,3 +69,9 @@ code {
     height: 160vh;
   }
 }
+
+.shadow{
+  /* box-shadow: '1px 2px 9px #F4AAB9'; */
+  border: 0.8px solid rgb(178, 162, 162);
+  border-radius: 10px;
+}

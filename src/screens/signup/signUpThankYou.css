@@ -1,0 +1,35 @@
+.thankYouBox {
+    width: 319px;
+height: 307px;
+border-radius: 16px;
+background: #FFF;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.tsThankYou{
+    color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-top: 16px;
+}
+.notifyText{
+padding-top: 16px;
+    color: var(--Stroke_color, #404040);
+text-align: center;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.tsCircleCheck{
+    width: 28px;
+height: 28px;
+flex-shrink: 0;
+}

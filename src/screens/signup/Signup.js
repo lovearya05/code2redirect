@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './signup.css'
 import '../../index.css'
 import SignUpLoginNavbar from '../navbar/SignUpLoginNavbar'
@@ -7,6 +7,8 @@ import GreenBorderButton from '../../utilityComponents/GreenBorderButton'
 import GreenButton from '../../utilityComponents/GreenButton'
 import { useNavigate } from 'react-router-dom'
 import MobileViewMobiles from '../../utilityComponents/MobileViewMobiles'
+import SignUpThankYou from './SignUpThankYou'
+import '../../index.css'
 
 
 function Signup() {
@@ -14,13 +16,14 @@ function Signup() {
     const handleNavigate = (page)=>{
         navigate('/code2redirect/'+page)
       }
+      const [showThanks, setShowThanks] = useState(false)
   return (
     <div className='web_background' >
-        <SignUpLoginNavbar  page='signup'/>
-        <MobileViewMobiles page='signup' />
+        {!showThanks && <SignUpLoginNavbar  page='signup'/>}
+        {!showThanks && <MobileViewMobiles page='signup' />}
 
 
-        <div style={{marginTop:'6%'}} className='allCenter' >
+        {!showThanks && <div style={{marginTop:'6%'}} className='allCenter' >
 
             <div style={{paddingTop:28}} className='formDiv' >
                 <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}} >
@@ -38,11 +41,17 @@ function Signup() {
 
 
                 <div className='allCenter' style={{marginTop:50}} >
-                    <GreenButton text='Save & Submit' onPress={()=>handleNavigate('thankYou')} />
+                    <GreenButton text='Save & Submit' onPress={()=>setShowThanks(true)} />
                 </div>
             </div>
 
-        </div>
+        </div>}
+
+        {showThanks && <div style={{position:'absolute',zIndex:2,display:'flex', justifyContent:'center',width:'100vw', top:'40vh' }} >
+
+            <SignUpThankYou/>
+        </div>}
+
 
     </div>
   )
