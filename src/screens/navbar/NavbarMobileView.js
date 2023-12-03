@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 function NavbarMobileView({page=''}) {
     const navigate = useNavigate();
     const handleNavigate = (page)=>{
-      navigate('/code2/'+page)
+      navigate('/code2redirect/'+page)
     }
   return (
     <div style={{paddingLeft: '9%', marginTop:'12%'}} >

@@ -14,12 +14,12 @@ import { useNavigate } from 'react-router-dom'
 function Splash() {
   // useEffect(()=>{
     //   const inter = setTimeout(()=>{
-      //   navigate('/code2/signup')
+      //   navigate('/code2redirect/signup')
       //   },2000)
       // },[])
       const navigate = useNavigate();
   const handleNavigate = (page)=>{
-    navigate('/code2/'+page)
+    navigate('/code2redirect/'+page)
   }
 
   return (

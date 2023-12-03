@@ -12,7 +12,7 @@ import MobileViewMobiles from '../../utilityComponents/MobileViewMobiles'
 function Signup() {
     const navigate = useNavigate();
     const handleNavigate = (page)=>{
-        navigate('/code2/'+page)
+        navigate('/code2redirect/'+page)
       }
   return (
     <div className='web_background' >
@@ -34,7 +34,7 @@ function Signup() {
                 <Text_Input inputName='Name' />
                 <Text_Input inputName='Contact number' />
                 <Text_Input inputName='Email id' />
-                <Text_Input inputName='Password' />
+                <Text_Input inputName='Password' type='password'  />
 
 
                 <div className='allCenter' style={{marginTop:50}} >

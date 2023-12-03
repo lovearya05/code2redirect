@@ -12,7 +12,7 @@ function Login() {
 
   const navigate = useNavigate();
     const handleNavigate = (page)=>{
-        navigate('/code2/'+page)
+        navigate('/code2redirect/'+page)
       }
   return (
     <div className='web_background' >
@@ -31,7 +31,7 @@ function Login() {
                 </div>
                 <div style={{paddingTop:'12%'}} >
                 <Text_Input inputName='Email id' />
-                <Text_Input inputName='Password' />
+                <Text_Input inputName='Password' type='password'  />
 
                 </div>
 
