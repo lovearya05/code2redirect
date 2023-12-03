@@ -57,31 +57,36 @@
 
     .changemaker {
         background: linear-gradient(106deg, #BA8C04 48.51%, #00955F 61.29%);
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
     }
 
     .largeText {
         color: #000;
-text-align: center;
-font-family: Poppins;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
+        text-align: center;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
     }
 
-    .appStore{
+    .appStore {
         margin-top: 6vh;
         height: 30px;
     }
-    .textsViewSplash{
+
+    .textsViewSplash {
         padding-top: 18vh;
+    }
+    .paddingHori50{
+        padding-left: 3vw;
+        padding-right: 3vw;
     }
 }
