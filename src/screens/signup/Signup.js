@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './signup.css'
 import '../../index.css'
 import SignUpLoginNavbar from '../navbar/SignUpLoginNavbar'
@@ -13,48 +13,57 @@ import '../../index.css'
 
 function Signup() {
     const navigate = useNavigate();
-    const handleNavigate = (page)=>{
-        navigate('/code2redirect/'+page)
-      }
-      const [showThanks, setShowThanks] = useState(false)
-  return (
-    <div className='web_background' >
-        {!showThanks && <SignUpLoginNavbar  page='signup'/>}
-        {!showThanks && <MobileViewMobiles page='signup' />}
+    // const handleNavigate = (page) => {
+    //     navigate('/code2redirect/' + page)
+    // }
+    const [showThanks, setShowThanks] = useState(false)
+    useEffect(() => {
+        if (showThanks) {
+            setTimeout(() => {
+                navigate('/code2redirect/')
+            }, 1500)
+        }
+
+    }, [showThanks])
+    
+    return (
+        <div className='web_background' >
+            {!showThanks && <SignUpLoginNavbar page='signup' />}
+            {!showThanks && <MobileViewMobiles page='signup' />}
 
 
-        {!showThanks && <div style={{marginTop:'6%'}} className='allCenter' >
+            {!showThanks && <div style={{ marginTop: '6%' }} className='allCenter' >
 
-            <div style={{paddingTop:28}} className='formDiv' >
-                <div style={{display:'flex', flexDirection:'row', justifyContent:'center'}} >
-                    <div className='flexRowAlignCenter onMobileViewSignupText' >
-                        <div className='readyDive' >Ready to dive in? </div>
-                        <div className='signupText' >Signup with us</div>
+                <div style={{ paddingTop: 28 }} className='formDiv' >
+                    <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'center' }} >
+                        <div className='flexRowAlignCenter onMobileViewSignupText' >
+                            <div className='readyDive' >Ready to dive in? </div>
+                            <div className='signupText' >Signup with us</div>
+                        </div>
+
                     </div>
-                    
+
+                    <Text_Input inputName='Name' />
+                    <Text_Input inputName='Contact number' />
+                    <Text_Input inputName='Email id' />
+                    <Text_Input inputName='Password' type='password' />
+
+
+                    <div className='allCenter' style={{ marginTop: 50 }} >
+                        <GreenButton text='Save & Submit' onPress={() => setShowThanks(true)} />
+                    </div>
                 </div>
 
-                <Text_Input inputName='Name' />
-                <Text_Input inputName='Contact number' />
-                <Text_Input inputName='Email id' />
-                <Text_Input inputName='Password' type='password'  />
+            </div>}
+
+            {showThanks && <div style={{ position: 'absolute', zIndex: 2, display: 'flex', justifyContent: 'center', width: '100vw', top: '40vh' }} >
+
+                <SignUpThankYou />
+            </div>}
 
 
-                <div className='allCenter' style={{marginTop:50}} >
-                    <GreenButton text='Save & Submit' onPress={()=>setShowThanks(true)} />
-                </div>
-            </div>
-
-        </div>}
-
-        {showThanks && <div style={{position:'absolute',zIndex:2,display:'flex', justifyContent:'center',width:'100vw', top:'40vh' }} >
-
-            <SignUpThankYou/>
-        </div>}
-
-
-    </div>
-  )
+        </div>
+    )
 }
 
 export default Signup
