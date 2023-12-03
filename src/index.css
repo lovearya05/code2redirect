@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.web_background {
+  background: url('./assets/whiteBackground.svg') center center/cover no-repeat;
+  height: 100vh;
+  /* display: flex; */
+  /* flex: 1; */
+}
+
+.flexRowAlignCenter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.flexRowSpcBtn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.allCenter{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.paddingVert8{
+  padding-top: 8;
+  padding-bottom: 8;
+}
+.marginTop8{
+  margin-top: 8;
+}
+.marginTop18{
+  margin-top: 18px;
+}
+.borderBottom{
+  border-bottom: 1px solid #D9D9D9;
+}
+.marginStart32{
+  margin-left: 32px;
+}
+.marginEnd32{
+  margin-right: 32px;
+}
+.marginRight8{
+  margin-right: 8px;
+}
+.paddingHori50{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.backColorWhite {
+  background-color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  .web_background {
+    background: url('./assets/mobileViewBackground.svg') center center/cover no-repeat;
+    height: 160vh;
+  }
+}

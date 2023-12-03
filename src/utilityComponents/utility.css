@@ -1,0 +1,55 @@
+.greenBorderBtn{
+    display: inline-flex;
+    padding: 6px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 200px;
+    border: 1px solid #D9D9D9;
+    cursor: pointer;
+}
+.greenBorderBtnText {
+    color: var(--Primary_color, #00955F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.greenButton{
+    display: inline-flex;
+padding: 6px 16px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 200px;
+background: var(--Primary_color, #00955F);
+cursor: pointer;
+}
+.greenBtnText{
+    color: var(--Primary_text-color, #FFF);
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.inputText{
+    margin-top: 26px;
+    color: #8C8C8C;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.inputDesign{
+    margin-top: 12px;
+    display: flex;
+padding: 10px 16px;
+align-items: center;
+gap: 10px;
+border-radius: 200px;
+border: 1px solid rgba(0, 0, 0, 0.11);
+width: 98%;
+flex-shrink: 0;
+}

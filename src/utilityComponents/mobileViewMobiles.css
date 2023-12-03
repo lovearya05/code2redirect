@@ -1,0 +1,98 @@
+.largeTextMob {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.centerContentMob {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.changemakerMob {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    /* 125% */
+    background: linear-gradient(106deg, #BA8C04 1.51%, #00955F 61.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.largeTextMob {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    /* 125% */
+}
+
+.appStoreMob {
+    margin-top: 6vh;
+    height: 30px;
+}
+.showMobiles{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .textsViewMob {
+        padding-top: 18vh;
+    }
+
+    .largeTextMob {
+        color: #000;
+        text-align: center;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .changemakerMob {
+        background: linear-gradient(106deg, #BA8C04 48.51%, #00955F 61.29%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .appStoreMob {
+        margin-top: 2vh;
+    }
+    .phonesMob{
+        margin-top: 6vh;
+    }
+    .mobilesMob{
+        height: 25vh;
+    }
+    .largeMob{
+        height: 28vh;
+    }
+    .showMobiles{
+        display: block;
+    }
+
+
+}

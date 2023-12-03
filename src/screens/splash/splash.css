@@ -1,0 +1,87 @@
+.green_web_background {
+    background: url('../../assets/backgroundGreen.svg') center center/cover no-repeat;
+    height: 100vh;
+    /* display: flex; */
+    /* flex: 1; */
+}
+
+.centerContent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.largeText {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    /* 125% */
+}
+
+.textWidth {
+    width: 910px;
+}
+
+.changemaker {
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 60px;
+    /* 125% */
+    background: linear-gradient(106deg, #BA8C04 1.51%, #00955F 61.29%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.appStore {
+    height: 60px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobiles {
+        height: 60vw;
+    }
+
+    .changemaker {
+        background: linear-gradient(106deg, #BA8C04 48.51%, #00955F 61.29%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+    }
+
+    .largeText {
+        color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+    }
+
+    .appStore{
+        margin-top: 6vh;
+        height: 30px;
+    }
+    .textsViewSplash{
+        padding-top: 18vh;
+    }
+}

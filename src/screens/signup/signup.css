@@ -1,0 +1,49 @@
+.readyDive{
+    color: #000;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.signupText{
+    margin-left: 8px;
+    text-align: center;
+font-family: Poppins;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+background: linear-gradient(106deg, #BA8C04 48.51%, #00955F 61.29%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.formDiv{
+    width: 500px;
+/* height: 653px; */
+flex-shrink: 0;
+border-radius: 20px;
+background: #FFF;
+padding:50px 45px;
+}
+
+.forgotPasswordText{
+    margin-top: 10px;
+    cursor: pointer;
+    color: #B48202;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+    .formDiv{
+        width: 70vw;
+    }
+    .onMobileViewSignupText{
+        display: flex;
+        flex-direction: column;
+    }
+}
