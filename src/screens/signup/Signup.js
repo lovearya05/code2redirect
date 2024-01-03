@@ -14,13 +14,13 @@ import '../../index.css'
 function Signup() {
     const navigate = useNavigate();
     // const handleNavigate = (page) => {
-    //     navigate('/code2redirect/' + page)
+    //     navigate('/' + page)
     // }
     const [showThanks, setShowThanks] = useState(false)
     useEffect(() => {
         if (showThanks) {
             setTimeout(() => {
-                navigate('/code2redirect/')
+                navigate('/')
             }, 1500)
         }
 

@@ -11,7 +11,7 @@ function SignUpLoginNavbar({page=''}) {
   const navigate = useNavigate();
 
   const handleNavigate = (page)=>{
-    navigate('/code2redirect/'+page)
+    navigate('/'+page)
   }
 
   return (

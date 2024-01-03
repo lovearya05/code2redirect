@@ -50,9 +50,23 @@
     height: 60px;
 }
 
+.mobilesWeb {
+    height: 40vh;
+}
+
+.mobilesWebMid {
+    height: 44vh;
+
+}
+
 @media only screen and (max-width: 768px) {
-    .mobiles {
-        height: 60vw;
+    .mobilesWeb {
+        height: 30vh;
+    }
+
+    .mobilesWebMid {
+        height: 34vh;
+
     }
 
     .changemaker {
@@ -85,7 +99,8 @@
     .textsViewSplash {
         padding-top: 18vh;
     }
-    .paddingHori50{
+
+    .paddingHori50 {
         padding-left: 3vw;
         padding-right: 3vw;
     }

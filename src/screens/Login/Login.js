@@ -12,7 +12,7 @@ function Login() {
 
   const navigate = useNavigate();
     const handleNavigate = (page)=>{
-        navigate('/code2redirect/'+page)
+        navigate('/'+page)
       }
   return (
     <div className='web_background' >

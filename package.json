@@ -1,7 +1,6 @@
 {
   "name": "code2redirect",
   "version": "0.1.0",
-  "homepage": "https://lovearya05.github.io/code2redirect",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",

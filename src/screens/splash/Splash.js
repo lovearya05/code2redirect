@@ -14,12 +14,12 @@ import { useNavigate } from 'react-router-dom'
 function Splash() {
   // useEffect(()=>{
     //   const inter = setTimeout(()=>{
-      //   navigate('/code2redirect/signup')
+      //   navigate('/signup')
       //   },2000)
       // },[])
       const navigate = useNavigate();
   const handleNavigate = (page)=>{
-    navigate('/code2redirect/'+page)
+    navigate('/'+page)
   }
 
   return (
@@ -41,7 +41,7 @@ function Splash() {
         </div>
       </div>
 
-      <div className='textsViewSplash' style={{display: 'flex', justifyContent: 'center', marginTop:'8%'}}>
+      <div className='textsViewSplash' style={{display: 'flex', justifyContent: 'center', marginTop:'8vh'}}>
         <div style={{}} >
           <div className='' style={{ textAlign: 'center'}}>
             <div className='largeText ' >Embrace an earth friendly</div>
@@ -52,7 +52,7 @@ function Splash() {
           </div>
         </div>
       </div>
-      <div style={{display: 'flex', justifyContent: 'center', marginTop:'3%'}}>
+      <div style={{display: 'flex', justifyContent: 'center', marginTop:'3vh'}}>
         <div className='flexRowAlignCenter' >
           <img className='appStore' src={appStore} />
           <div style={{marginLeft:28}} ></div>
@@ -62,9 +62,9 @@ function Splash() {
 
       <div style={{position:'absolute', bottom:0,display:'flex',flexDirection:'row', justifyContent:'center', width:'100%'}} >
         <div>
-          <img className='mobiles' style={{zIndex:1, marginRight:-65}} src={mobileLeft} />
-          <img className='mobiles' style={{zIndex:2, position:'relative'}} src={mobileCenter} />
-          <img className='mobiles' style={{zIndex:1, marginLeft:-65}} src={mobileRight} />
+          <img className='mobilesWeb' style={{zIndex:1, marginRight:-65}} src={mobileLeft} />
+          <img className='mobilesWebMid' style={{zIndex:2, position:'relative'}} src={mobileCenter} />
+          <img className='mobilesWeb' style={{zIndex:1, marginLeft:-65}} src={mobileRight} />
         </div>
       </div>
 

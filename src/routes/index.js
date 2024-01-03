@@ -11,10 +11,10 @@ export default function RoutesServer() {
     <div style={{ width: "100%" }}>
 
         <Routes>
-          <Route exact path="/code2redirect/" element={<Splash />}></Route>
-          <Route exact path="/code2redirect/signup" element={<Signup />}></Route>
-          <Route exact path="/code2redirect/login" element={<Login />}></Route>
-          <Route exact path="/code2redirect/thankYou" element={<ThankYou />}></Route>
+          <Route exact path="/" element={<Splash />}></Route>
+          <Route exact path="/signup" element={<Signup />}></Route>
+          <Route exact path="/login" element={<Login />}></Route>
+          <Route exact path="/thankYou" element={<ThankYou />}></Route>
         </Routes>
 
     </div>
